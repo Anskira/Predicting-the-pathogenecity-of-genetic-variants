@@ -50,3 +50,14 @@ For each variant, a 128-nucleotide window centered around the variant position w
 The aligned sequences were passed into the GPN-MSA model
 Generated embeddings of size (128 × 768)
 The center position embedding was used to represent the variant
+
+# Data Processing
+
+- Extracted relevant features from the ClinVar dataset: CHROM, POS, REF, ALT, Pathogenicity
+- Converted labels into binary format (benign vs pathogenic)
+- Combined coding and noncoding variants into a single dataset and shuffled
+- For each variant, a 128-length genomic window centered at the variant position was extracted from the 89-species MSA dataset
+- Generated embeddings using GPN-MSA, producing vectors of size (128 × 768)
+- Used the center embedding to represent each variant
+- Processed data in batches and stored embeddings as .pt files for efficient reuse
+- Split embedding files into train and test sets for model training
