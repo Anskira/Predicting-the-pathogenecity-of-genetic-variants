@@ -1,1 +1,18 @@
-This is the first commit
+# Introduction
+Accurately predicting the pathogenicity of genetic variants is critical for understanding disease mechanisms and improving clinical decision-making. While variants in coding regions are relatively well-studied, interpreting variants in noncoding regions remains a major challenge due to their complex regulatory roles.
+Recent advances in deep learning, particularly transformer-based models trained on multiple sequence alignments (MSA), enable the extraction of rich, evolutionarily informed genomic representations. In this project, we leverage GPN-MSA embeddings to capture both local sequence context and cross-species conservation for variant classification.
+Our objective is to build a machine learning model that predicts variant pathogenicity using these embeddings, while evaluating performance differences between coding and noncoding regions.
+
+# Getting Started
+- Python 3.7+
+- pip (Python package installer)
+
+### Clone the Repository
+```bash
+git clone https://github.com/Anskira/Predicting-the-pathogenecity-of-genetic-variants.git
+```
+
+### Install the required packages
+```bash
+   pip install -r requirements.txt
+```
