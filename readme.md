@@ -69,7 +69,7 @@ The center position embedding was used to represent the variant
 - Optimized using Adam optimizer with a learning rate scheduler
 - Trained with a train–validation split and implemented early stopping based on loss convergence
 - Evaluated performance using:
--   Accuracy
--   Precision & Recall
--   Matthews Correlation Coefficient (MCC)
+   1. Accuracy
+   2. Precision & Recall
+   3. Matthews Correlation Coefficient (MCC)
 - Tuned the prediction threshold on validation data to improve precision–recall trade-off
