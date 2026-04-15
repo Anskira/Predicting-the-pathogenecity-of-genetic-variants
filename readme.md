@@ -61,3 +61,15 @@ The center position embedding was used to represent the variant
 - Used the center embedding to represent each variant
 - Processed data in batches and stored embeddings as .pt files for efficient reuse
 - Split embedding files into train and test sets for model training
+
+# Model training
+- Trained a feedforward neural network on GPN-MSA embeddings to classify variants as benign or pathogenic
+- Used the center embedding (768-dim) from each sequence as the model input
+- Applied binary cross-entropy loss with class weights to address class imbalance
+- Optimized using Adam optimizer with a learning rate scheduler
+- Trained with a train–validation split and implemented early stopping based on loss convergence
+- Evaluated performance using:
+-   Accuracy
+-   Precision & Recall
+-   Matthews Correlation Coefficient (MCC)
+- Tuned the prediction threshold on validation data to improve precision–recall trade-off
