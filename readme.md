@@ -75,4 +75,23 @@ The center position embedding was used to represent the variant
 - Tuned the prediction threshold on validation data to improve precision–recall trade-off
 
 # Results & Discussion
-![Accuracy plots]https://github.com/Anskira/Predicting-the-pathogenecity-of-genetic-variants/blob/main/plots/Just%20accuracy%20curve_2.png
+![Accuracy plots](https://github.com/Anskira/Predicting-the-pathogenecity-of-genetic-variants/blob/main/plots/Just%20accuracy%20curve_2.png)
+The accuracy curves remain relatively stable, with validation accuracy slightly higher than training accuracy, likely due to class imbalance.
+
+![Loss plots](https://github.com/Anskira/Predicting-the-pathogenecity-of-genetic-variants/blob/main/plots/Just%20loss%20curve_2.png)
+The training and validation loss curves show a consistent decrease in loss during training, indicating effective learning. While validation loss stabilizes and slightly increases after a point, this suggests mild overfitting, which is controlled using early stopping. 
+
+![ROC plot](https://github.com/Anskira/Predicting-the-pathogenecity-of-genetic-variants/blob/main/plots/Regionic_ROC_2.png)
+The ROC curve highlights a clear difference in performance across genomic regions:
+
+   - Coding regions: Strong performance with AUC ≈ 0.86
+   - Noncoding regions: Moderate performance with AUC ≈ 0.64
+
+This indicates that the model is significantly better at identifying pathogenic variants in coding regions, where biological signals are more pronounced. In contrast, noncoding regions remain challenging due to weaker and less interpretable patterns.
+
+
+## Key Takeaways
+- GPN-MSA embeddings effectively capture biologically meaningful patterns
+- Model performs well on coding regions but struggles with noncoding variants
+- Class imbalance and overlapping distributions limit overall performance
+- Further improvements can be achieved with better feature representation and model tuning
