@@ -75,5 +75,4 @@ The center position embedding was used to represent the variant
 - Tuned the prediction threshold on validation data to improve precision–recall trade-off
 
 # Results & Discussion
-
-- 
+![Accuracy plots]https://github.com/Anskira/Predicting-the-pathogenecity-of-genetic-variants/blob/main/plots/Just%20accuracy%20curve_2.png
