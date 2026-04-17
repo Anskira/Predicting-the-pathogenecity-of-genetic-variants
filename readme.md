@@ -76,12 +76,15 @@ The center position embedding was used to represent the variant
 
 # Results & Discussion
 ![Accuracy plots](https://github.com/Anskira/Predicting-the-pathogenecity-of-genetic-variants/blob/main/plots/Just%20accuracy%20curve_2.png)
+
 The accuracy curves remain relatively stable, with validation accuracy slightly higher than training accuracy, likely due to class imbalance.
 
 ![Loss plots](https://github.com/Anskira/Predicting-the-pathogenecity-of-genetic-variants/blob/main/plots/Just%20loss%20curve_2.png)
+
 The training and validation loss curves show a consistent decrease in loss during training, indicating effective learning. While validation loss stabilizes and slightly increases after a point, this suggests mild overfitting, which is controlled using early stopping. 
 
 ![ROC plot](https://github.com/Anskira/Predicting-the-pathogenecity-of-genetic-variants/blob/main/plots/Regionic_ROC_2.png)
+
 The ROC curve highlights a clear difference in performance across genomic regions:
 
    - Coding regions: Strong performance with AUC ≈ 0.86
@@ -95,3 +98,11 @@ This indicates that the model is significantly better at identifying pathogenic 
 - Model performs well on coding regions but struggles with noncoding variants
 - Class imbalance and overlapping distributions limit overall performance
 - Further improvements can be achieved with better feature representation and model tuning
+
+# Conclusion
+
+In this project, we developed a deep learning pipeline to predict the pathogenicity of genetic variants using embeddings derived from GPN-MSA. By leveraging evolutionary information from multi-species sequence alignments, the model was able to learn meaningful representations of genomic variants.
+
+The results show that the model performs well on coding regions, achieving strong discriminative ability, while performance on noncoding regions remains comparatively limited. This highlights the inherent complexity of noncoding genomic signals and the need for more advanced modeling approaches in these regions.
+
+Overall, this work demonstrates the effectiveness of embedding-based approaches for variant classification and provides a foundation for future improvements, including better handling of class imbalance, richer contextual features, and more robust models for noncoding variant interpretation.
