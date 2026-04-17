@@ -77,16 +77,19 @@ The center position embedding was used to represent the variant
 # Results & Discussion
 
 - Accuracy plots
+  
 ![Accuracy plots](https://github.com/Anskira/Predicting-the-pathogenecity-of-genetic-variants/blob/main/plots/Just%20accuracy%20curve_2.png)
 
 The accuracy curves remain relatively stable, with validation accuracy slightly higher than training accuracy, likely due to class imbalance.
 
 - Loss plots
+  
 ![Loss plots](https://github.com/Anskira/Predicting-the-pathogenecity-of-genetic-variants/blob/main/plots/Just%20loss%20curve_2.png)
 
 The training and validation loss curves show a consistent decrease in loss during training, indicating effective learning. While validation loss stabilizes and slightly increases after a point, this suggests mild overfitting, which is controlled using early stopping. 
 
 - ROC plot
+  
 ![ROC plot](https://github.com/Anskira/Predicting-the-pathogenecity-of-genetic-variants/blob/main/plots/Regionic_ROC_2.png)
 
 The ROC curve highlights a clear difference in performance across genomic regions:
