@@ -18,6 +18,19 @@ git clone https://github.com/Anskira/Predicting-the-pathogenecity-of-genetic-var
    pip install -r requirements.txt
 ```
 
+### Training the model
+1. **Navigate to the Notebooks directory:**
+
+   ```bash
+   cd Notebooks
+   ```
+
+2. **Launch Jupyter Notebook:**
+
+   ```bash
+   jupyter training
+   ```
+
 # Data Information
 ## ClinVar Dataset
 
