@@ -41,8 +41,10 @@ git clone https://github.com/Anskira/Predicting-the-pathogenecity-of-genetic-var
 2. **Run app.py**
 
    ```bash
-   python app.py
+   streamlit run app.py
    ```
+
+![APP UI](https://github.com/Anskira/Predicting-the-pathogenecity-of-genetic-variants/blob/main/plots/UI.png)
    
 # Data Information
 ## ClinVar Dataset
