@@ -28,9 +28,22 @@ git clone https://github.com/Anskira/Predicting-the-pathogenecity-of-genetic-var
 2. **Launch Jupyter Notebook:**
 
    ```bash
-   jupyter training
+   python model_training2.ipynb
    ```
 
+### Launching the app
+1. **Navigate to the Notebooks directory:**
+
+   ```bash
+   cd Notebooks
+   ```
+
+2. **Run app.py**
+
+   ```bash
+   python app.py
+   ```
+   
 # Data Information
 ## ClinVar Dataset
 
