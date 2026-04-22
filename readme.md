@@ -44,6 +44,17 @@ git clone https://github.com/Anskira/Predicting-the-pathogenecity-of-genetic-var
    streamlit run app.py
    ```
 
+
+3. **Access the app from your local machine:**
+
+   Since the app runs on a remote HPC cluster, the URL Streamlit prints (e.g. `http://localhost:8501`) is not directly accessible from your browser. You need to set up an SSH tunnel from your **local terminal**:
+```bash
+   ssh -L 8501:localhost:8501 @
+```
+   Replace `<username>` with your cluster username and `<cluster_hostname>` with your cluster's address (e.g. `hpg.rc.ufl.edu` for HiPerGator).
+
+   Then open your browser and navigate to:
+
 ![APP UI](https://github.com/Anskira/Predicting-the-pathogenecity-of-genetic-variants/blob/main/plots/UI.png)
    
 # Data Information
